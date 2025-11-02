@@ -1,7 +1,14 @@
 // Configuration de l'URL de l'API
 const envApiUrl = import.meta.env.VITE_API_URL
 const defaultUrl = 'http://localhost:3001'
-export const API_URL = envApiUrl || defaultUrl
+
+// Nettoyer l'URL : enlever les slashes à la fin
+const cleanUrl = (url) => {
+  if (!url) return url
+  return url.replace(/\/+$/, '') // Enlève tous les slashes à la fin
+}
+
+export const API_URL = cleanUrl(envApiUrl) || defaultUrl
 
 // Debug - afficher toutes les infos
 console.log('🔧 ===== CONFIGURATION API =====')
