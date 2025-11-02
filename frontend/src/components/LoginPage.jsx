@@ -13,7 +13,10 @@ const LoginPage = ({ onLogin }) => {
     setIsLoading(true)
 
     try {
-      const response = await fetch(`${API_URL}/auth/login`, {
+      const url = `${API_URL}/auth/login`
+      console.log('Tentative de connexion à:', url) // Debug
+      
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -21,16 +24,31 @@ const LoginPage = ({ onLogin }) => {
         body: JSON.stringify({ link }),
       })
 
+      console.log('Réponse du serveur:', response.status, response.statusText) // Debug
+
+      if (!response.ok) {
+        // Si la réponse n'est pas OK, essayer de lire le texte d'abord
+        const text = await response.text()
+        console.error('Erreur serveur:', text) // Debug
+        try {
+          const data = JSON.parse(text)
+          setErrorMessage(data.error || `Erreur ${response.status}: ${response.statusText}`)
+        } catch {
+          setErrorMessage(`Erreur ${response.status}: Impossible de se connecter au serveur. Vérifiez l'URL du backend.`)
+        }
+        return
+      }
+
       const data = await response.json()
 
-      if (response.ok) {
+      if (data.success) {
         onLogin(data.user)
       } else {
         setErrorMessage(data.error || 'Erreur de connexion')
       }
     } catch (error) {
       console.error('Erreur de connexion:', error)
-      setErrorMessage('Impossible de se connecter au serveur.')
+      setErrorMessage(`Erreur: ${error.message}. Vérifiez que l'URL du backend est correcte (${API_URL})`)
     } finally {
       setIsLoading(false)
     }
