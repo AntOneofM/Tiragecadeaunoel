@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Mamy",
+    "code": "MAMY2024",
+    "phone": "+33123456789",
+    "isAdmin": false
+  },
+  {
+    "name": "Martine", 
+    "code": "MARTINE2024",
+    "phone": "+33123456790",
+    "isAdmin": false
+  },
+  {
+    "name": "Philippe",
+    "code": "PHILIPPE2024", 
+    "phone": "+33123456791",
+    "isAdmin": false
+  },
+  {
+    "name": "Christelle",
+    "code": "CHRISTELLE2024",
+    "phone": "+33123456792", 
+    "isAdmin": false
+  },
+  {
+    "name": "Florence",
+    "code": "FLORENCE2024",
+    "phone": "+33123456793",
+    "isAdmin": false
+  },
+  {
+    "name": "Angelo",
+    "code": "ANGELO2024",
+    "phone": "+33123456794",
+    "isAdmin": false
+  },
+  {
+    "name": "Laura",
+    "code": "LAURA2024",
+    "phone": "+33123456795",
+    "isAdmin": false
+  },
+  {
+    "name": "Charles",
+    "code": "CHARLES2024",
+    "phone": "+33123456796",
+    "isAdmin": false
+  },
+  {
+    "name": "Antoine",
+    "code": "ANTOINE2024",
+    "phone": "+33123456797",
+    "isAdmin": true
+  },
+  {
+    "name": "Antonin",
+    "code": "ANTONIN2024",
+    "phone": "+33123456798",
+    "isAdmin": false
+  },
+  {
+    "name": "Cécile",
+    "code": "CECILE2024",
+    "phone": "+33123456799",
+    "isAdmin": false
+  },
+  {
+    "name": "Lucile",
+    "code": "LUCILE2024",
+    "phone": "+33123456800",
+    "isAdmin": false
+  },
+  {
+    "name": "Bastien",
+    "code": "BASTIEN2024",
+    "phone": "+33123456801",
+    "isAdmin": false
+  },
+  {
+    "name": "Nicolas",
+    "code": "NICOLAS2024",
+    "phone": "+33123456802",
+    "isAdmin": false
+  }
+]

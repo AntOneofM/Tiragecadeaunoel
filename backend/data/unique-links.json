@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Mamy",
+    "link": "mamy-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Martine",
+    "link": "martine-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Philippe",
+    "link": "philippe-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Christelle",
+    "link": "christelle-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Florence",
+    "link": "florence-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Angelo",
+    "link": "angelo-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Laura",
+    "link": "laura-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Charles",
+    "link": "charles-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Antoine",
+    "link": "antoine-2024",
+    "isAdmin": true
+  },
+  {
+    "name": "Antonin",
+    "link": "antonin-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Cécile",
+    "link": "cecile-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Lucile",
+    "link": "lucile-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Bastien",
+    "link": "bastien-2024",
+    "isAdmin": false
+  },
+  {
+    "name": "Nicolas",
+    "link": "nicolas-2024",
+    "isAdmin": false
+  }
+]
