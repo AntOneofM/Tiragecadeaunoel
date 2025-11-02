@@ -3,7 +3,12 @@ import cors from 'cors'
 import fs from 'fs'
 
 const app = express()
-app.use(cors())
+// Configuration CORS plus permissive pour la production
+app.use(cors({
+  origin: '*', // Autorise toutes les origines (à restreindre en production si besoin)
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}))
 app.use(express.json())
 
 const PARTICIPANTS = './data/participants.json'
